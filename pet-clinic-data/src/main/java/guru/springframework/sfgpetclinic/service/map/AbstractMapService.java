@@ -2,7 +2,11 @@ package guru.springframework.sfgpetclinic.service.map;
 
 import guru.springframework.sfgpetclinic.model.BaseEntity;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> {
 
@@ -37,7 +41,7 @@ public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> 
     }
 
     private Long getNextId(){
-        Long nextId;
+        long nextId;
         if(mapStorage.keySet().isEmpty()){
             nextId = 1L;
         }else{
