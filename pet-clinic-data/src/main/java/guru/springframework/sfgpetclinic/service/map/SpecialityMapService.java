@@ -5,6 +5,6 @@ import guru.springframework.sfgpetclinic.service.SpecialityService;
 import org.springframework.stereotype.Service;
 
 @Service
-public class SpecialityMapServiceImpl extends AbstractMapService<Speciality, Long> implements SpecialityService {
+public class SpecialityMapService extends AbstractMapService<Speciality, Long> implements SpecialityService {
 
 }
