@@ -86,8 +86,6 @@ public class DataLoader implements CommandLineRunner {
 
         fionasCat.setOwner(owner2);
 
-
-
         ownerService.save(owner2);
 
         System.out.println("Loaded Owners....");
@@ -100,7 +98,6 @@ public class DataLoader implements CommandLineRunner {
         //TODO
         //fionasCat.getVisits().add(catVisit);
         visitService.save(catVisit);
-
 
         //creating specialities
         Speciality radiology = new Speciality();
